@@ -60,10 +60,13 @@ class Board extends React.Component {
           {this.renderSquare(4)}
           {this.renderSquare(5)}
         </div>
-        <div className="board-row">
+        <div className="board-row block">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
           {this.renderSquare(8)}
+        </div>
+        <div className="reload block">
+          <button className="button is-primary" onClick={() => window.location.reload()}>重来</button>
         </div>
       </div>
     );
