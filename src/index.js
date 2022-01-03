@@ -66,7 +66,7 @@ class Board extends React.Component {
           {this.renderSquare(8)}
         </div>
         <div className="reload block">
-          <button className="button is-primary" onClick={() => window.location.reload()}>重来</button>
+          <button className="button is-primary" onClick={() => {this.setState({ squares: Array(9).fill(null), xIsNext: true });}}>重来</button>
         </div>
       </div>
     );
