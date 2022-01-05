@@ -1,7 +1,6 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-  height: 1000px;
+  /* margin: 20px; */
 }
 
 ol, ul {
@@ -55,7 +54,10 @@ ol, ul {
 }
 
 #root {
-  position: relative;
-  top: 30%;
-  left: 50%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
